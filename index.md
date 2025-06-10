@@ -63,7 +63,7 @@ reduzir o tamanho ocupado em até 80% [^tiff_compression], sem perca de
 qualidade, por ser um algoritmo de compressão sem perdas, e mantendo
 compatibilidade com a maioria dos softwares de geoprocessamento.
 
-No software de GIS _Global Mapper_ é possível exportar arquivos tiff com
+No software de GIS Global Mapper é possível exportar arquivos tiff com
 compressão:
 
 ![Exportar TIFF com compressão no software Global Mapper](./assets/images/global-mapper-tiff-compression.png)
@@ -77,3 +77,29 @@ Para a compressão de arquivos no formato `.tif`, o software
     [TIFF compression? Use discretion!](https://openpreservation.org/blogs/compression-at-your-discretion/)
 
 [^geotiff]: [GeoTIFF](https://en.wikipedia.org/wiki/GeoTIFF)
+
+# Compressão de arquivos para arquivamento em `.7z`
+
+O formato de arquivo `.7z` (7-Zip) é um formato de compressão de arquivos que
+utiliza o software 7-Zip de código aberto e totalmente gratuito e que faz uso
+de um algoritmo de compressão mais eficiente que os utilizados nos formatos
+`.zip` e `.rar`, na maioria das vezes gerando arquivos menores e fazendo melhor
+uso de multithread [^7zip].
+
+Uma tabela comparativa de compressão de arquivos utilizando os softwares 7-Zip
+e WinRar, utilizando os métodos com maior compressão:
+
+| Pasta original | `.7z` com 7-Zip | `.zip` com 7-Zip | `.rar` com WinRar | `.zip` com WinRar |
+| :------------: | :-------------: | :--------------: | :---------------: | :---------------: |
+|     860 MB     |    102.1 MB     |     148.1 MB     |     154.4 MB      |     165.5 MB      |
+
+Nota-se melhor eficiência no formato `.7z` com 7-Zip. Até mesmo na utilização
+do formato `.zip` o software 7-Zip apresentou melhor eficiência.
+
+Para a utilização do software 7-Zip, com o método de melhor compressão, basta
+modificar o `Nível de compressão` para `9 - Ultra`, os outros parâmetros são
+ajustados automaticamente:
+
+![Compactação de arquivos com 7-Zip](./assets/images/compress-7z.png)
+
+[^7zip]: [7-Zip](https://www.7-zip.org/)
