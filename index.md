@@ -37,13 +37,13 @@ Para a compressão e decompressão de arquivos no formato `.laz`, o software
 
 ![Lastools Integration compressão de las](./assets/images/lastools-convert-laz.png)
 
-[^laz_git]: https://github.com/LASzip/LASzip
+[^laz_git]: [LASzip GitHub](https://github.com/LASzip/LASzip)
 
 [^laz_specification]:
-    https://downloads.rapidlasso.de/doc/LAZ_Specification_1.4_R0.pdf
+    [LAZ Specification](https://downloads.rapidlasso.de/doc/LAZ_Specification_1.4_R0.pdf)
 
 [^laz_standard]:
-    https://www.ogc.org/requests/laz-v1-4-community-standard-work-item-proposal/
+    [OGC considering LAZ v1.4 – R1 as a Community Standard](https://www.ogc.org/requests/laz-v1-4-community-standard-work-item-proposal/)
 
 [^las_specification]:
-    https://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf
+    [LAS Specification](https://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf)
