@@ -35,7 +35,7 @@ $$
 Para a compressão e decompressão de arquivos no formato `.laz`, o software
 `Lastools Integration` pode ser utilizado:
 
-![Lastools Integration compressão de las](./assets/images/lastools-convert-laz.png)
+![Lastools Integration compressão de LAS](./assets/images/lastools-convert-laz.png)
 
 [^laz_git]: [LASzip GitHub](https://github.com/LASzip/LASzip)
 
@@ -47,3 +47,33 @@ Para a compressão e decompressão de arquivos no formato `.laz`, o software
 
 [^las_specification]:
     [LAS Specification](https://www.asprs.org/wp-content/uploads/2019/07/LAS_1_4_r15.pdf)
+
+# Compressão _DEFLATE_ em arquivos `.tif`
+
+O formato de imagem TIFF é geralmente considerado o padrão de ouro para
+armazenamento a longo prazo de dados de imagens [^tiff_compression]. Sua
+principal desvantagem é o tamanho ocupado, porém podem ser empregadas técnicas
+de compressão para a sua redução.
+
+O formato GeoTIFF é um padrão onde são inseridas informações de
+georreferenciamento nos metadados de uma imagem TIFF [^geotiff].
+
+O algoritmo de compressão _DEFLATE_ (compressão ZIP) possui a vantagem de
+reduzir o tamanho ocupado em até 80% [^tiff_compression], sem perca de
+qualidade, por ser um algoritmo de compressão sem perdas, e mantendo
+compatibilidade com a maioria dos softwares de geoprocessamento.
+
+No software de GIS _Global Mapper_ é possível exportar arquivos tiff com
+compressão:
+
+![Exportar TIFF com compressão no software Global Mapper](./assets/images/global-mapper-tiff-compression.png)
+
+Para a compressão de arquivos no formato `.tif`, o software
+`Lastools Integration` pode ser utilizado:
+
+![Lastools Integration compressão de TIFF](./assets/images/lastools-compress-tiff.png)
+
+[^tiff_compression]:
+    [TIFF compression? Use discretion!](https://openpreservation.org/blogs/compression-at-your-discretion/)
+
+[^geotiff]: [GeoTIFF](https://en.wikipedia.org/wiki/GeoTIFF)
