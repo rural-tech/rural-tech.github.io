@@ -35,6 +35,7 @@ $$
 Para a compressão e decompressão de arquivos no formato `.laz`, o software
 `Lastools Integration` pode ser utilizado:
 
+{:style="text-align:center;"}
 ![Lastools Integration compressão de LAS](./assets/images/lastools-convert-laz.png)
 
 [^laz_git]: [LASzip GitHub](https://github.com/LASzip/LASzip)
@@ -63,14 +64,19 @@ reduzir o tamanho ocupado em até 80% [^tiff_compression], sem perca de
 qualidade, por ser um algoritmo de compressão sem perdas, e mantendo
 compatibilidade com a maioria dos softwares de geoprocessamento.
 
+Em um dado real de batimetria o tamanho do arquivo foi de 10.2 MB para 3.5 MB,
+após a compressão, uma redução de 66%.
+
 No software de GIS Global Mapper é possível exportar arquivos tiff com
 compressão:
 
+{:style="text-align:center;"}
 ![Exportar TIFF com compressão no software Global Mapper](./assets/images/global-mapper-tiff-compression.png)
 
 Para a compressão de arquivos no formato `.tif`, o software
 `Lastools Integration` pode ser utilizado:
 
+{:style="text-align:center;"}
 ![Lastools Integration compressão de TIFF](./assets/images/lastools-compress-tiff.png)
 
 [^tiff_compression]:
@@ -100,6 +106,45 @@ Para a utilização do software 7-Zip, com o método de melhor compressão, bast
 modificar o `Nível de compressão` para `9 - Ultra`, os outros parâmetros são
 ajustados automaticamente:
 
+{:style="text-align:center;"}
 ![Compactação de arquivos com 7-Zip](./assets/images/compress-7z.png)
 
 [^7zip]: [7-Zip](https://www.7-zip.org/)
+
+# Compressão transparente no sistema de arquivos NTFS
+
+A compressão transparente no sistema de arquivos NTFS pode reduzir o tamanho de
+arquivos em até 60%, especialmente arquivos de texto [^ntfs_compression_1].
+Esse tipo de compressão ocorre a nível de sistema de arquivos, comprimindo
+blocos, sendo os blocos descomprimidos durante operações de leitura.
+
+A compressão ocorre a cada escrita e a descompressão a cada leitura. Há então
+uso de CPU a cada operação. Porém, geralmente, o custo de operações de leitura
+e escrita são maiores que os de compressão e descompressão, o que pode melhorar
+o desempenho geral, especialmente em dispositivos em rede
+[^ntfs_compression_2].
+
+Para se habilitar a compressão transparente no sistema de arquivos NTFS, basta
+abrir o painel de propriedades do arquivo/pasta, clicar em `Avançados...` na
+parte de `Atributos`, e selecionar
+`Compactar o conteúdo para economizar espaço em disco` na parte de
+`Atributos de compactação e Codificação`:
+
+{:style="text-align:center;"}
+![Propriedades](./assets/images/windows-compression-1.png)
+
+{:style="text-align:center;"}
+![Atributos avançados](./assets/images/windows-compression-2.png)
+
+É possível também habilitar a compressão transparente em todo o disco, abrindo
+o painel de propriedades do disco e clicando em
+`Compactar este disco para economizar espaço`:
+
+{:style="text-align:center;"}
+![Propriedades de disco](./assets/images/windows-compression-3.png)
+
+[^ntfs_compression_1]:
+    [Disk Space Cleanup Guidance: Using NTFS Compression](https://www.foldersizes.com/wordpress/index.php/2015/01/disk-space-cleanup-tip-ntfs-compression.htm)
+
+[^ntfs_compression_2]:
+    [Pros and Cons of Enabling File and Folder Compression](https://www.itechtics.com/ntfs-compression/)
