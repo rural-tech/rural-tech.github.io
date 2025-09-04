@@ -1,0 +1,12 @@
+{
+  "default": true,
+  "no-trailing-spaces": { "br_spaces": 0 },
+  "line-length": { "headings": false, "stern": true, "tables": false },
+  "single-h1": false,
+  "ol-prefix": { "style": "one" },
+  "no-inline-html": { "allowed_elements": ["u", "mark"] },
+  "code-block-style": { "style": "fenced" },
+  "code-fence-style": { "style": "backtick" },
+  "emphasis-style": { "style": "underscore" },
+  "strong-style": { "style": "asterisk" }
+}

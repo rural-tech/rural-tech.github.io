@@ -1,0 +1,13 @@
+title: Rural Tech
+description:
+theme: just-the-docs
+
+url: https://rural-tech.github.io
+
+favicon_ico: "/assets/images/favicon.ico"
+
+search_enabled: false
+nav_enabled: false
+
+mathjax: true
+latex: mathjax
