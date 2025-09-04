@@ -36,7 +36,7 @@ Para a compressão e decompressão de arquivos no formato `.laz`, o software
 `Lastools Integration` pode ser utilizado:
 
 {:style="text-align:center;"}
-![Lastools Integration compressão de LAS](./assets/images/lastools-convert-laz.png)
+![Lastools Integration compressão de LAS](../assets/images/lastools-convert-laz.png)
 
 [^laz_git]: [LASzip GitHub](https://github.com/LASzip/LASzip)
 
@@ -71,13 +71,13 @@ No software de GIS Global Mapper é possível exportar arquivos tiff com
 compressão:
 
 {:style="text-align:center;"}
-![Exportar TIFF com compressão no software Global Mapper](./assets/images/global-mapper-tiff-compression.png)
+![Exportar TIFF com compressão no software Global Mapper](../assets/images/global-mapper-tiff-compression.png)
 
 Para a compressão de arquivos no formato `.tif`, o software
 `Lastools Integration` pode ser utilizado:
 
 {:style="text-align:center;"}
-![Lastools Integration compressão de TIFF](./assets/images/lastools-compress-tiff.png)
+![Lastools Integration compressão de TIFF](../assets/images/lastools-compress-tiff.png)
 
 [^tiff_compression]:
     [TIFF compression? Use discretion!](https://openpreservation.org/blogs/compression-at-your-discretion/)
@@ -107,7 +107,7 @@ modificar o `Nível de compressão` para `9 - Ultra`, os outros parâmetros são
 ajustados automaticamente:
 
 {:style="text-align:center;"}
-![Compactação de arquivos com 7-Zip](./assets/images/compress-7z.png)
+![Compactação de arquivos com 7-Zip](../assets/images/compress-7z.png)
 
 [^7zip]: [7-Zip](https://www.7-zip.org/)
 
@@ -131,17 +131,17 @@ parte de `Atributos`, e selecionar
 `Atributos de compactação e Codificação`:
 
 {:style="text-align:center;"}
-![Propriedades](./assets/images/windows-compression-1.png)
+![Propriedades](../assets/images/windows-compression-1.png)
 
 {:style="text-align:center;"}
-![Atributos avançados](./assets/images/windows-compression-2.png)
+![Atributos avançados](../assets/images/windows-compression-2.png)
 
 É possível também habilitar a compressão transparente em todo o disco, abrindo
 o painel de propriedades do disco e clicando em
 `Compactar este disco para economizar espaço`:
 
 {:style="text-align:center;"}
-![Propriedades de disco](./assets/images/windows-compression-3.png)
+![Propriedades de disco](../assets/images/windows-compression-3.png)
 
 [^ntfs_compression_1]:
     [Disk Space Cleanup Guidance: Using NTFS Compression](https://www.foldersizes.com/wordpress/index.php/2015/01/disk-space-cleanup-tip-ntfs-compression.htm)
