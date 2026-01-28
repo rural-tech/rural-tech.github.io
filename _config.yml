@@ -17,8 +17,7 @@ favicon_ico: "/assets/images/favicon.ico"
 search_enabled: false
 nav_enabled: true
 
-back_to_top: true
-back_to_top_text: "Back to top"
+back_to_top: false
 
 mathjax: true
 latex: mathjax
