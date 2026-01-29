@@ -16,6 +16,7 @@ favicon_ico: "/assets/images/favicon.ico"
 
 search_enabled: false
 nav_enabled: true
+nav_external_links_new_tab: true
 
 back_to_top: false
 
