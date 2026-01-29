@@ -13,6 +13,7 @@ defaults:
       layout: "default"
 
 favicon_ico: "/assets/images/favicon.ico"
+logo: "/assets/images/logo-rural.svg"
 
 search_enabled: false
 nav_enabled: true
