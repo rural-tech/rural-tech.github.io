@@ -10,3 +10,19 @@
 .site-footer {
   display: none;
 }
+
+.side-bar {
+  @include mq(lg) {
+    width: $nav-width;
+    min-width: $nav-width;
+  }
+}
+
+.main{
+  @include mq(lg) {
+    margin-left: calc($nav-width + 2rem) !important;
+    margin-right: 10rem;
+    max-width: 100rem;
+  }
+  text-align: justify;
+}

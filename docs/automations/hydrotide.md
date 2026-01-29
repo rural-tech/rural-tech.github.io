@@ -7,7 +7,7 @@ parent: Automações
 
 O software **HydroTide** destina-se à aplicação de redução batimétrica em dados
 de ecobatímetro de feixe único (SBES) e multifeixe (MBES), além de adicionar
-informações temporaisa dados processados, utilizando como referência os dados
+informações temporais a dados processados, utilizando como referência os dados
 brutos. Os dados são estruturados no formato `txyz`, permitindo a localização
 temporal e espacial de cada amostra.
 
